@@ -2,8 +2,19 @@
 <html lang="en">
 <head>
 	<title>Client-Server</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 </head>
 <body>
-	
+	<div class="left">
+		<form action="" method="get">
+			<label for="ip">Server Ip:</label><br>
+			<input type="text" placeholder="xxx.xxx.xxx.xxx" name="conn" id="ip" minlength="7" maxlength="15" size="15" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$">
+
+		</form>
+	</div>
+	<div class="right">
+		<a href="?conn=self">Be the server!</a>
+	</div>
 </body>
 </html>
