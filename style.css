@@ -14,6 +14,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: rgb(89, 118, 161);
+}
+.left:hover {
+	background-color: rgb(35, 83, 156);
 }
 .right {
 	height: 100%;
@@ -27,12 +31,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.left:hover {
-	background-color: rgb(63, 98, 152);
+	background-color: rgb(171, 112, 43);
 }
 .right:hover {
-	background-color: rgb(171, 112, 43);
+	background-color: rgb(151, 84, 8);
 }
 a {
 	text-decoration: none;

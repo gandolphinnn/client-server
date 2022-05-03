@@ -9,12 +9,11 @@
 	<div class="left">
 		<form action="" method="get">
 			<label for="ip">Server Ip:</label><br>
-			<input type="text" placeholder="xxx.xxx.xxx.xxx" name="conn" id="ip" minlength="7" maxlength="15" size="15" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$">
-
+			<input type="text" placeholder="xxx.xxx.xxx.xxx" name="conn" id="ip" minlength="15" maxlength="15" size="15">
 		</form>
 	</div>
-	<div class="right">
-		<a href="?conn=self">Be the server!</a>
+	<div onclick="window.location='?conn=self';" class="right">
+		<a>Be the server!</a>
 	</div>
 </body>
 </html>
