@@ -6,13 +6,23 @@
 	<script src="script.js"></script>
 </head>
 <body>
+	<div class="center">
+		<label for="page">Page::</label><br>
+		<select name="page" id="page">
+			<option value="c">c</option>
+		</select> 
+	</div>
 	<div class="left">
-		<form action="" method="get">
+		<div class="ip">
 			<label for="ip">Server Ip:</label><br>
 			<input type="text" placeholder="xxx.xxx.xxx.xxx" name="conn" id="ip" minlength="15" maxlength="15" size="15">
-		</form>
+		</div>
+		<div class="port">
+			<label for="port">Server Port:</label><br>
+			<input type="text" name="port" id="port" minlength="1" maxlength="4" size="15">
+		</div>
 	</div>
-	<div onclick="window.location='?conn=self';" class="right">
+	<div class="right" onclick="window.location='?conn=self';" >
 		<a>Be the server!</a>
 	</div>
 </body>
