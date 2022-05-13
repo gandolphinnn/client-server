@@ -1,0 +1,103 @@
+div.right {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	position: relative;
+}
+
+/* div.scroll {
+	width: 30px;
+	height: 100%;
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+}
+div.scroll-btn {
+	height: 30px;
+	border-radius: 15px;
+	background-color: #265473;
+	position: sticky;
+}
+div#scr-bottom.scroll {
+	align-self: flex-end;
+}*/
+
+div.msg {
+	width: fit-content;
+	background-color: #1a4662;
+	border-radius: 10px;
+	margin-top: 15px;
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+	max-width: 40%;
+	min-width: 100px;
+}
+div.msg.continue {
+	margin-top: 2px;
+}
+div.msg .other{
+	width: fit-content;
+}
+div.msg.mine{
+	width: fit-content;
+	align-self: flex-end;
+	background-color: #0e6737;
+}
+div.msg div.sendername {
+	font-size: 20px;
+	width: fit-content;
+}
+div.msg div.content {
+	word-break: normal;
+}
+div.msg div.time {
+	font-size: 12px;
+	align-self: flex-end;
+}
+
+div.date {
+	background-color: #1a4662;
+	width: fit-content;
+	font-size: 16px;
+	border-radius: 10px;
+	padding: 7px 12px;
+	align-self: center;
+	margin-top: 15px;
+}
+
+div.in-file {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 45px;
+	border-radius: 10px;
+}
+
+div.in-text {
+	display: flex;
+	align-items: center;
+	height: 45px;
+	width: calc(100% - 170px);
+}
+input.in-text {
+	background-color: #265473;
+	height: 100%;
+	border-radius: 10px;
+	border: 1px solid #1a4662;
+	padding: 0px 7px;
+	margin: 0px 5px;
+	color: white;
+	width: 100%;
+	outline: none;
+}
+
+div.in-send {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 45px;
+	border-radius: 10px;
+}

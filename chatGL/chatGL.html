@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat GL</title>
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/left.css">
+		<link rel="stylesheet" href="styles/right.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="left">
+				<div class="head hov" id="members_info">MEMBERS</div>
+				<div class="body" id="statusbody">
+				</div>
+				<div onclick="leaveChat()" class="foot leave hov">
+					<a>Leave chat</a>
+				</div>
+			</div>
+			<div class="right">
+				<div class="head hov" id="chat_info">
+					CHAT NAME
+				</div>
+				<!-- <div class="scroll">
+					<div class="scroll-btn" id="scr-top" onclick="scrlTo('top')">^</div>
+					<div class="scroll-btn" id="scr-bottom" onclick="scrlTo('bottom')">v</div>
+				</div> -->
+				<div class="body" id="chatbody">
+				</div>
+				<div class="foot input">
+					<div class="in-file hov">
+						<label class="custom-file-upload">
+							<input type="file" id="in-file" style="display: none;" disabled>File
+						</label>
+					</div>
+					<div class="in-text" id="in-text">
+						<input type="text" class="in-text" placeholder="Write your msg" disabled>
+					</div>
+					<div class="in-send hov" id="in-send" onclick="sendMsg()">
+						Send
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/classes.js"></script>
+		<script src="scripts/client.js"></script>
+	</body>
+</html>

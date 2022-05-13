@@ -1,0 +1,26 @@
+div.left {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	position: relative;
+    border-right: 1px solid;
+}
+p {
+    margin: 10px;
+    word-break: break-all;
+}
+.u_off {
+	color: #d70f0f;
+}
+.u_on{
+	color: #c9c3c3;
+}
+.u_typing {
+	color: #46ce46;
+}
+a {
+	word-break: keep-all;
+}
+div.leave a{
+    color: #d70f0f;
+}
