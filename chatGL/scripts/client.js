@@ -1,7 +1,7 @@
 //todo login, signin, scroll buttons, files
 let url = new URLSearchParams(window.location.search);
-let serverLoc;
-if (url.has('server') && (serverLoc = url.get('server')) != '') {
+let serverIp;
+if (url.has('ip') && (serverIp = url.get('ip')) != '') {
 	//* input output
 		const intext = document.getElementsByClassName('in-text')[1];
 		const infile = document.getElementById('in-file');
@@ -15,7 +15,7 @@ if (url.has('server') && (serverLoc = url.get('server')) != '') {
 		}
 
 	//* my data
-		let me = new Client(new WebSocket('ws://'+ serverLoc));
+		let me = new Client(new WebSocket('ws://'+ serverIp +'1330'));
 		let lasTime = null;
 		let lastUser = null;
 		let serverSettings = undefined;

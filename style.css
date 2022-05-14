@@ -1,17 +1,21 @@
 body {
 	background-color: rgb(206, 216, 235);
 	font-size: xx-large;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
 .left {
 	height: 100%;
 	width: 50%;
 	position: fixed;
-	z-index: 1;
+	z-index: 0;
 	top: 0;
 	overflow-x: hidden;
 	padding-top: 20px;
 	left: 0;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(89, 118, 161);
@@ -23,7 +27,7 @@ body {
 	height: 100%;
 	width: 50%;
 	position: fixed;
-	z-index: 1;
+	z-index: 0;
 	top: 0;
 	overflow-x: hidden;
 	padding-top: 20px;
@@ -36,10 +40,15 @@ body {
 .right:hover {
 	background-color: rgb(151, 84, 8);
 }
+.center {
+	position: absolute;
+	top: 10px;
+	z-index: 1;
+}
 a {
 	text-decoration: none;
 	color: black;
 }
-input {
+input, select {
 	height: 25px;
 }
