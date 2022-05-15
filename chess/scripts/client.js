@@ -1,12 +1,8 @@
-//todo login, signin, scroll buttons, files
 let url = new URLSearchParams(window.location.search);
 let serverIp;
 if (url.has('ip') && (serverIp = url.get('ip')) != '') {
 	//* input output
-		const intext = document.getElementsByClassName('in-text')[1];
-		const infile = document.getElementById('in-file');
-		const chatbody = document.getElementById('chatbody');
-		const statusbody = document.getElementById('statusbody');
+		
 
 	//* connection setup
 		window.WebSocket = window.WebSocket || window.MozWebSocket;
